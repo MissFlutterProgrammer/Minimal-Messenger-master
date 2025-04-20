@@ -47,7 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
     var emailController = TextEditingController();
     var passwordController = TextEditingController();
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       body: SafeArea(
         child: Center(
           child: Column(
@@ -58,9 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 color: Theme.of(context).colorScheme.primary,
                 size: 60,
               ),
-              const SizedBox(
-                height: 40,
-              ),
+              const SizedBox(height: 40),
               Text(
                 "Welcome back, You've been missed",
                 style: TextStyle(
@@ -68,25 +66,19 @@ class _LoginScreenState extends State<LoginScreen> {
                   color: Theme.of(context).colorScheme.primary,
                 ),
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 20),
               MyTextField(
                 hint: "Email",
                 obsecure: false,
                 controller: emailController,
               ),
-              const SizedBox(
-                height: 10,
-              ),
+              const SizedBox(height: 10),
               MyTextField(
                 hint: "Password",
                 obsecure: true,
                 controller: passwordController,
               ),
-              const SizedBox(
-                height: 25,
-              ),
+              const SizedBox(height: 25),
               MyButton(
                 text: "Login",
                 onTap: () async {
@@ -94,9 +86,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       passwordController.text.trim());
                 },
               ),
-              const SizedBox(
-                height: 25,
-              ),
+              const SizedBox(height: 25),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

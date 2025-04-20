@@ -5,7 +5,7 @@ import 'package:minimal_messenger/theme/light_mode.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ThemeManager {
-  static SharedPreferences _preferences = locator.get();
+  static final SharedPreferences _preferences = locator.get();
   static final String themeKey = "theme";
 
   static void saveTheme(bool onDark) async {

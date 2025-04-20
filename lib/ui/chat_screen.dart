@@ -91,7 +91,7 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(bottom: 30.0),
+            padding: const EdgeInsets.only(bottom: 30),
             child: Row(
               children: [
                 Expanded(
@@ -103,7 +103,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   ),
                 ),
                 Container(
-                  margin: const EdgeInsets.only(right: 20.0),
+                  margin: const EdgeInsets.only(right: 20),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     color: Colors.green,
@@ -158,12 +158,10 @@ class MessageList extends StatelessWidget {
                     fontSize: 20,
                   ),
                 ),
-                const SizedBox(
-                  width: 5,
-                ),
+                const SizedBox(width: 5),
                 SpinKitWanderingCubes(
                   color: Theme.of(context).colorScheme.primary,
-                  size: 30.0,
+                  size: 30,
                 ),
               ],
             ),

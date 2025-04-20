@@ -57,7 +57,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     var passwordController = TextEditingController();
     var pwConfirmController = TextEditingController();
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       body: SafeArea(
         child: Center(
           child: Column(
@@ -68,9 +68,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 color: Theme.of(context).colorScheme.primary,
                 size: 60,
               ),
-              const SizedBox(
-                height: 40,
-              ),
+              const SizedBox(height: 40),
               Text(
                 "Lest's create an account for you",
                 style: TextStyle(
@@ -78,33 +76,25 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   color: Theme.of(context).colorScheme.primary,
                 ),
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 20),
               MyTextField(
                 hint: "Email",
                 obsecure: false,
                 controller: emailController,
               ),
-              const SizedBox(
-                height: 10,
-              ),
+              const SizedBox(height: 10),
               MyTextField(
                 hint: "Password",
                 obsecure: true,
                 controller: passwordController,
               ),
-              const SizedBox(
-                height: 10,
-              ),
+              const SizedBox(height: 10),
               MyTextField(
                 hint: "Confirm Password",
                 obsecure: true,
                 controller: pwConfirmController,
               ),
-              const SizedBox(
-                height: 25,
-              ),
+              const SizedBox(height: 25),
               MyButton(
                 text: "Register",
                 onTap: () async {
@@ -115,9 +105,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   );
                 },
               ),
-              const SizedBox(
-                height: 25,
-              ),
+              const SizedBox(height: 25),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

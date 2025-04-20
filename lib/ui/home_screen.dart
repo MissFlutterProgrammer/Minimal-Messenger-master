@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: const MyDrawer(),
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         foregroundColor: Colors.grey,
@@ -44,7 +44,7 @@ class BuildUserList extends StatelessWidget {
               "Error",
               style: TextStyle(
                 color: Theme.of(context).colorScheme.primary,
-                fontSize: 20.0,
+                fontSize: 20,
               ),
             ),
           );
@@ -61,12 +61,10 @@ class BuildUserList extends StatelessWidget {
                     fontSize: 20,
                   ),
                 ),
-                const SizedBox(
-                  width: 5,
-                ),
+                const SizedBox(width: 5),
                 SpinKitWanderingCubes(
                   color: Theme.of(context).colorScheme.primary,
-                  size: 30.0,
+                  size: 30,
                 ),
               ],
             ),

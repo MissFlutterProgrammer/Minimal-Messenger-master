@@ -9,25 +9,21 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Column(
             children: [
-              SizedBox(
-                height: 80,
-              ),
+              SizedBox(height: 80),
               Icon(
                 Icons.message,
                 size: 50,
                 color: Theme.of(context).colorScheme.primary,
               ),
-              SizedBox(
-                height: 20,
-              ),
+              SizedBox(height: 20),
               Padding(
-                padding: const EdgeInsets.only(left: 25.0),
+                padding: const EdgeInsets.only(left: 25),
                 child: ListTile(
                   title: const Text("H O M E"),
                   leading: Icon(
@@ -40,7 +36,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 25.0),
+                padding: const EdgeInsets.only(left: 25),
                 child: ListTile(
                   title: const Text("S E T T I N G S"),
                   leading: Icon(
@@ -62,7 +58,7 @@ class MyDrawer extends StatelessWidget {
             ],
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 25.0, bottom: 25.0),
+            padding: const EdgeInsets.only(left: 25, bottom: 25),
             child: ListTile(
               title: const Text("L O G O U T"),
               leading: Icon(
